@@ -1,8 +1,11 @@
 import './App.css'
+import AjaxHooks from './components/AjaxHooks'
 import Componente from './components/Componente'
 import ContadorHooks from './components/ContadorHooks'
 import Eventos from './components/Eventos'
+import HooksPersonalizados from './components/HooksPersonalizados'
 import Propiedades from './components/Propiedades'
+import Referencias from './components/Referencias'
 import RelojHooks from './components/RelojHooks'
 import ScroolHooks from './components/ScroolHooks'
 
@@ -29,6 +32,12 @@ function App() {
       <ScroolHooks />
       <hr />
       <RelojHooks />
+      <hr />
+      <AjaxHooks />
+      <hr />
+      <HooksPersonalizados />
+      <hr />
+      <Referencias />
     </>
   )
 }
