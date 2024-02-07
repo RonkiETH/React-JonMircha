@@ -4,7 +4,7 @@ const initialForm = {
     id: null
 }
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 export default function CrudForm ({ createData, updateData, dataToEdit, setDataToEdit}) {
     const [form, setForm] = useState(initialForm)
     useEffect(() => {
