@@ -1,6 +1,10 @@
-import React, { useReducer, useState } from 'react'
+import { useReducer } from 'react'
 
 const initialState = { count: 0 }
+
+const init = (initialState) => {
+    return { count: initialState.count + 100 }
+} 
 
 const TYPES = {
     INCREMENT: "INCREMENT",
@@ -34,7 +38,7 @@ function reducer(state, action) {
 
 const Contador = () => {
     // const [count, setCount] = useState(0)
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(reducer, initialState, init)
 
     const restar = () => {
         dispatch({ type: TYPES.DECREMENT })
